@@ -1,12 +1,10 @@
 require('dotenv').config();
-const { ApolloServer } = require('apollo-server-express');
 const express = require('express');
-const { Server } = require('http');
-// const { ApolloServer } = require('apollo-server-express');
+const { ApolloServer } = require('apollo-server-express');
 const path = require('path');
 
 // const { typeDefs, resolvers } = require('./shemas');
-// const db = require('./config/connection');
+const db = require('./config/connection');
 const PORT = process.env.PORT || 3001;
 const app = express();
 
