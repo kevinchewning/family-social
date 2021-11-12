@@ -54,3 +54,6 @@ UserSchema.pre('save', async function (next) {
 UserSchema.methods.checkPassword = async function (password) {
     return await bcrypt.compare(password, this.password);
 }
+
+const User = model('User', UserSchema);
+module.exports = User;
